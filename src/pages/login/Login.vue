@@ -1,12 +1,16 @@
 <template>
   <div>
-    Hello world
+    <login-header></login-header>
   </div>
 </template>
 
 <script>
+    import LoginHeader from './components/Header'
     export default {
-        name: "Login"
+        name: "Login",
+        components: {
+          LoginHeader
+        }
     }
 </script>
 
