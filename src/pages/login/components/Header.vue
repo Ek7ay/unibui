@@ -23,7 +23,7 @@
     top 0
     z-index 10
     .img1
-      margin-left 50px
+      margin-left 73px
     .img2
       margin-left 13px
 </style>
