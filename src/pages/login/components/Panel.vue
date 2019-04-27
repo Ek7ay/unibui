@@ -5,7 +5,7 @@
       <div class="input-box">
         <el-input
           class="input1"
-          v-model="a"
+          v-model="user"
           prefix-icon="el-icon-user-solid"
         >
         </el-input>
@@ -15,7 +15,7 @@
         <el-input
           class="input2"
           type="password"
-          v-model="b"
+          v-model="password"
           prefix-icon="el-icon-lock"
           suffix-icon="el-icon-view"
         >
@@ -24,18 +24,40 @@
 
       <el-checkbox v-model="checked">记住我</el-checkbox>
 
-      <el-button type="primary">登录</el-button>
+      <el-button 
+        type="primary"
+        @click="login"
+      >登录</el-button>
     </div>
 </template>
 
 <script>
+    import axios from 'axios'
+
     export default {
         name: "Panel",
         data () {
           return{
             checked: true,
-            a: "",
-            b: ""
+            user: "",
+            password: ""
+          }
+        },
+        methods: {
+          login () {
+            const url = 'http://t.weather.sojson.com/api/weather/city/101030100';
+            axios.get(url,{
+              params: {
+                "user": this.user,
+                "password": this.password
+              }
+            })
+              .then(res => {
+                console.log(res);
+                if (res.statusText == "OK") {
+                  alert(res.data.message)
+                }
+              })
           }
         }
     }
