@@ -1,12 +1,17 @@
 <template>
-    <div class="main">
-      hello world
+    <div>
+      <index-header></index-header>
     </div>
 </template>
 
 <script>
+    import IndexHeader from './components/Header'
+
     export default {
-        name: "Index"
+        name: "Index",
+        components: {
+          IndexHeader
+        }
     }
 </script>
 
