@@ -33,6 +33,8 @@
 
 <script>
     import axios from 'axios'
+    import router from '@/router/index.js'
+    import store from '@/store'
 
     export default {
         name: "Panel",
@@ -55,7 +57,9 @@
               .then(res => {
                 console.log(res);
                 if (res.statusText == "OK") {
-                  alert(res.data.message)
+                  alert(res.data.message);
+                  store.dispatch('setTime', res.data.time); //vuex存入值
+                  router.push('/index');
                 }
               })
           }
