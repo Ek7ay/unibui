@@ -33,6 +33,8 @@
       height 74px
       background-color $white
       border-bottom 1px solid #edeaea
+      position absolute
+      top 0
       .logo-box
         display inline-block
         width 244px

@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="content">
       <router-view/>
     </div>
 </template>
@@ -12,8 +12,8 @@
 
 <style lang="stylus" scoped>
     @import '~styles/varibles.styl'
-    .main
-      position fixed
+    .content
+      position absolute
       top 87px
       left 256px
       right 12px

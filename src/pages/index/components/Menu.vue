@@ -74,12 +74,12 @@
     @import '~styles/varibles.styl'
     .main
         width 244px
-        margin-top -1px
-        overflow auto
-        height 92.35vh
+        position absolute
+        top 74px
+        left 0
+        bottom 0
         background #262A36
-        overflow inherit
-    .main [class*=el-col-]
-        position relative
-        left 1px
+    .main .el-menu
+        border-right 0px
+   
 </style>
