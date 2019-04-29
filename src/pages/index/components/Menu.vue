@@ -6,7 +6,8 @@
                 class="el-menu-vertical-demo"
                 @open="handleOpen"
                 @close="handleClose"
-                background-color="#545c64"
+                @select="handleSelect"
+                background-color="#262A36"
                 text-color="#fff"
                 active-text-color="#ffd04b"
             >
@@ -56,10 +57,14 @@
         name: "Menu",
         methods: {
             handleOpen (key, keyPath) {
-                console.log(key, keyPath);
+                console.log("展开" + key, keyPath);
             },
             handleClose (key, keyPath) {
-                console.log(key, keyPath);
+                console.log("收起" + key, keyPath);
+            },
+            handleSelect (key, keyPath) {
+                console.log("选中key" + " " + key)
+                console.log("选中keyPath" + " " + keyPath)
             }
         }
     }
@@ -68,11 +73,13 @@
 <style lang="stylus" scoped>
     @import '~styles/varibles.styl'
     .main
-        width 245px
+        width 244px
         margin-top -1px
         overflow auto
-        height 100vh
-        background #867373
-
-    
+        height 92.35vh
+        background #262A36
+        overflow inherit
+    .main [class*=el-col-]
+        position relative
+        left 1px
 </style>
