@@ -1,6 +1,10 @@
 <template>
   <div class="shuju-box">
-    <div class="shuju sjborder" v-for="item in buidata" :key="item.id">
+    <div
+      v-for="item in buidata"
+      :class='item.rightborder?"shuju sjborder":"shuju"'
+      :key="item.id"
+    >
       <img :src="item.imgpath"/>
       <span class="building">{{item.building}}</span>
       <span class="nu">{{item.nu}}</span>
@@ -16,31 +20,37 @@
           return{
             buidata: [{
               "id": "id1",
+              "rightborder": true,
               "imgpath": "static/img/index/1.png",
               "building": "楼宇总量（栋）",
               "nu": 46767
             },{
               "id": "id2",
+              "rightborder": true,
               "imgpath": "static/img/index/2.png",
               "building": "光缆已接入(栋)",
               "nu": 45816
             },{
               "id": "id3",
+              "rightborder": false,
               "imgpath": "static/img/index/3.png",
               "building": "客户业务量(条)",
               "nu": 48515
             },{
               "id": "id4",
+              "rightborder": true,
               "imgpath": "static/img/index/4.png",
               "building": "客户总量（个）",
               "nu": 48611
             },{
               "id": "id5",
+              "rightborder": true,
               "imgpath": "static/img/index/5.png",
               "building": "本王客户（个）",
               "nu": 48945
             },{
               "id": "id6",
+              "rightborder": false,
               "imgpath": "static/img/index/6.png",
               "building": "2019年年收入（万）",
               "nu": 54821

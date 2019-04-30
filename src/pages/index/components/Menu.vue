@@ -55,6 +55,75 @@
 <script>
     export default {
         name: "Menu",
+        data (){
+            return{
+                menudata: [{
+                    "name": "系统管理",
+                    "icon": "el-icon-location",
+                    "children": [{
+                        "childname": "用户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "客户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "楼宇客户信息维护",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "商机客户管理",
+                        "childicon": "el-icon-menu"
+                    }]
+                },{
+                    "name": "系统监控",
+                    "icon": "el-icon-location",
+                    "children": [{
+                        "childname": "用户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "客户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "楼宇客户信息维护",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "商机客户管理",
+                        "childicon": "el-icon-menu"
+                    }]
+                },{
+                    "name": "商务楼宇",
+                    "icon": "el-icon-location",
+                    "children": [{
+                        "childname": "用户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "客户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "楼宇客户信息维护",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "商机客户管理",
+                        "childicon": "el-icon-menu"
+                    }]
+                },{
+                    "name": "空间资源",
+                    "icon": "el-icon-location",
+                    "children": [{
+                        "childname": "用户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "客户管理",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "楼宇客户信息维护",
+                        "childicon": "el-icon-menu"
+                    },{
+                        "childname": "商机客户管理",
+                        "childicon": "el-icon-menu"
+                    }]
+                }]
+          }
+        },
         methods: {
             handleOpen (key, keyPath) {
                 console.log("展开" + key, keyPath);
@@ -81,5 +150,4 @@
         background #262A36
     .main .el-menu
         border-right 0px
-   
 </style>
