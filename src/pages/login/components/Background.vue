@@ -17,6 +17,6 @@
     left 0px
     bottom 0px
     right 0px
-    background url(../../../assets/img/login/background.jpg) no-repeat
+    background url(../../../../static/img/login/background.jpg) no-repeat
     background-size cover
 </style>

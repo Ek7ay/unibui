@@ -1,7 +1,7 @@
 <template>
     <div class="header">
-      <img class="img1" src="../../../assets/img/login/liantongLogo.png" height="48" width="88"/>
-      <img class="img2" src="../../../assets/img/login/Group.png" height="21" width="252"/>
+      <img class="img1" src="static/img/login/liantongLogo.png" height="48" width="88"/>
+      <img class="img2" src="static/img/login/Group.png" height="21" width="252"/>
     </div>
 </template>
 
