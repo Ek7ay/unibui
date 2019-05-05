@@ -20,7 +20,7 @@
                         <i :class="item.icon"></i>
                         <span>{{item.name}}</span>
                     </template>
-                   
+
                     <el-menu-item
                         :index="subItem.childid"
                         v-for="subItem in item.children"
@@ -45,9 +45,9 @@
                     "icon": "el-icon-location",
                     "id" : "1",
                     "children": [{
-                        "childname": "用户管理",
+                        "childname": "楼宇管理",
                         "childicon": "el-icon-platform-eleme",
-                        "childid" : "1-1"
+                        "childid" : "/index/Facility"
                     },{
                         "childname": "客户管理",
                         "childicon": "el-icon-c-scale-to-original",
