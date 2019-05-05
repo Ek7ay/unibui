@@ -2,7 +2,8 @@
     <div class="main">
         <el-col :span="24">
             <el-menu
-                default-active="2"
+                router
+                :default-active="$route.path"
                 class="el-menu-vertical-demo"
                 @open="handleOpen"
                 @close="handleClose"
@@ -47,15 +48,15 @@
                     "children": [{
                         "childname": "楼宇管理",
                         "childicon": "el-icon-platform-eleme",
-                        "childid" : "/index/Facility"
+                        "childid" : "/index/contentindex"
                     },{
                         "childname": "客户管理",
                         "childicon": "el-icon-c-scale-to-original",
-                        "childid" : "1-2"
+                        "childid" : "/index/Facility"
                     },{
                         "childname": "楼宇客户信息维护",
                         "childicon": "el-icon-s-order",
-                        "childid" : "1-3"
+                        "childid" : "/"
                     },{
                         "childname": "商机客户管理",
                         "childicon": "el-icon-s-promotion",
