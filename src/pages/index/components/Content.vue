@@ -18,4 +18,5 @@
       left 256px
       right 12px
       bottom 0px
+      overflow-x  auto
 </style>

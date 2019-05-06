@@ -152,6 +152,7 @@
         left 0
         bottom 0
         background #262A36
+        overflow auto
     .main .el-menu
         border-right 0px
 </style>
