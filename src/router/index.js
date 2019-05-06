@@ -4,6 +4,7 @@ import Login from '@/pages/login/Login'
 import Index from '@/pages/index/Index'
 import Contentindex from '@/pages/content/index/Contentindex'
 import Facility from '@/pages/content/facility/Facility'
+import Customer from '@/pages/content/customer/Customer'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
         {
           path: 'Facility',
           component: Facility
+        },
+        {
+          path: 'customer',
+          component: Customer
         },
         {
           path: "",

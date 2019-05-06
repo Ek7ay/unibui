@@ -56,11 +56,11 @@
                     },{
                         "childname": "楼宇客户信息维护",
                         "childicon": "el-icon-s-order",
-                        "childid" : "/"
+                        "childid" : "/index/customer"
                     },{
                         "childname": "商机客户管理",
                         "childicon": "el-icon-s-promotion",
-                        "childid" : "1-4"
+                        "childid" : "/"
                     }]
                 },{
                     "name": "系统监控",
