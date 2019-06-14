@@ -47,21 +47,20 @@
         },
         methods: {
           login () {
-            const url = 'http://t.weather.sojson.com/api/weather/city/101030100';
-            axios.get(url,{
-              params: {
-                "user": this.user,
-                "password": this.password
-              }
-            })
-              .then(res => {
-                console.log(res);
-                if (res.statusText == "OK") {
-                  alert(res.data.message);
-                  store.dispatch('setTime', res.data.time); //vuex存入值
-                  router.push('/index');
-                }
-              })
+            // const url = 'http://t.weather.sojson.com/api/weather/city/101030100';
+            // axios.get(url,{
+            //   params: {
+            //     "user": this.user,
+            //     "password": this.password
+            //   }
+            // })
+            //   .then(res => {
+            //     console.log(res);
+            //     alert(res.data.message);
+            //     store.dispatch('setTime', res.data.time); //vuex存入值
+            //     router.push('/index');
+            //   })
+            router.push('/index');
           }
         }
     }

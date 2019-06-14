@@ -28,6 +28,7 @@
         methods: {
             handleClick (tab, event) {
                 console.log(tab, event)
+                console.log(this.activeName)
             }
         }
     }
@@ -43,4 +44,5 @@
                 width 200px
                 height 100px
                 background-color red
+
 </style>
